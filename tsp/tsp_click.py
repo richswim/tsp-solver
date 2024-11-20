@@ -14,6 +14,19 @@ DEFAULT_PATH = f"{get_project_root()}/delivery_points/"
 )
 @click.option("--path", default=None, help="Path to the directory containing the file.")
 def solve_tsp(file: str = None, path: str = None):
+    """
+    Solve the Traveling Salesman Problem (TSP) using the Simulated Annealing algorithm.
+
+    This function reads delivery points from a specified file and path, solves the TSP
+    using the Simulated Annealing algorithm, and prints the shortest route and its total distance.
+
+    Args:
+        file (str, optional): The name of the file containing delivery points. Defaults to "delivery_points.txt".
+        path (str, optional): The path to the directory containing the file. Defaults to None.
+
+    Raises:
+        FileNotFoundError: If the specified file is not found in the given path.
+    """
     try:
         delivery_points = read_delivery_points(
             file_name=file, path=path or DEFAULT_PATH
