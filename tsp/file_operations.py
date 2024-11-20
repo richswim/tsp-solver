@@ -1,3 +1,5 @@
+import os
+
 from tsp import get_project_root
 
 DELIVERY_POINTS_PATH = f"{get_project_root()}/delivery_points/"
@@ -19,7 +21,7 @@ def read_delivery_points(
         list[tuple[float, float]]: A list of tuples, each containing the x and y coordinates of a delivery point.
     """
     points = []
-    with open(f"{path}{file_name}", "r") as file:
+    with open(os.path.join(path, file_name), "r") as file:
         for line in file:
             x, y = map(float, line.strip().split(","))
             points.append((x, y))
