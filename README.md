@@ -5,7 +5,7 @@ This project provides a solution to the Traveling Salesman Problem (TSP) using t
 ## Prerequisites
 
 - Python 3.8 or higher
-- `pip` for managing Python packages
+- `pipenv` for managing Python packages
 
 ## Installation
 
@@ -38,7 +38,7 @@ You can use the provided CLI to solve the TSP with your delivery points.
 
 ### Example
 
-To solve the TSP using the default delivery points file located in the default directory:
+To solve the TSP using the default delivery points file located in the default directory `/tsp-solver/delivery_points/delivery_points.txt`, run the following command:
 ```sh
 python -m tsp.tsp_click
 ```
