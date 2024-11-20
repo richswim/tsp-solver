@@ -124,12 +124,3 @@ def simulated_annealing_tsp(
         temperature *= cooling_rate
 
     return best_route, best_distance
-
-
-# def solve_tsp():
-#     # Read delivery points from the file
-#     delivery_points = read_delivery_points()
-#     # Solve the TSP using Simulated Annealing
-#     route, distance = simulated_annealing_tsp(delivery_points)
-#
-#     return route, distance
