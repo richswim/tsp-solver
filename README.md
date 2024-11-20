@@ -17,7 +17,7 @@ This project provides a solution to the Traveling Salesman Problem (TSP) using t
 
 2. Install the required packages:
     ```sh
-    pip install -r requirements.txt
+    pipenv install
     ```
 
 ## Usage
